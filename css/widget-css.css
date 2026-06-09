@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@keyframes anime {0%, 20%, 100% {transform: rotate(0deg); box-shadow: 0px 3px 6px 1px #00000000;}
+5% {transform: rotate(-16deg) scale(1.2); box-shadow: 0px 3px 6px 1px #00000059;}
+10% {transform: rotate(0deg) scale(1.2); box-shadow: 0px 3px 6px 1px #00000059;}
+15% {transform: rotate(-16deg) scale(1.2); box-shadow: 0px 3px 6px 1px #00000059;}
+}
+.pwrbox__but {width: 90px; height: 90px; box-sizing: border-box; background: #f44336; border-radius: 50%; padding: 23px; position: fixed; right:calc(50vw - 690px);bottom:60px; cursor: pointer; animation: anime 6s infinite; z-index: 100;}
+.pwrbox__but-icon {display: block;}
+.pwrbox__fon {position: fixed; top: 0px; left: 0px; opacity: 0; visibility: hidden; width: 100%; height: 100%; background: #ffffffb3; transition: 0.6s; z-index: 101;}
+.pwrbox__form {position: fixed; height: 100%; box-sizing: border-box; right: -100%; /* left: 100%; */ top:0px; background: #ebebeb; width: 340px; padding: 0 40px; display: flex; flex-direction: column; justify-content: center; transition: 0.2s; z-index: 102;font-family: 'Roboto', sans-serif !important;}
+.pwrbox__form-active {left: unset; right: 0px;}
+.pwrbox__close {position: absolute; top: 10px; right: 10px; cursor: pointer;}
+.pwrbox__close-icon {}
+.pwrbox__logo {width: 120px; height: 120px; border-radius: 50%; display: block; margin: 0 auto 50px; box-shadow: 0 3px 12px rgba(0,0,0,.15);}
+.pwrbox__zag {font-size: 20px; margin: 0 0 13px;}
+.pwrbox__phone {}
+.pwrbox__input-style {background: #d0d0d0; transition: 0.2s; height: 40px; border-radius: 8px; padding: 0 15px; margin: 0 0 10px; border: 1px solid #919191; font-size: 16px; flex-shrink: 0; outline: none;}
+.pwrbox__input-style::placeholder {color:#000;}
+.pwrbox__but-style {display: flex; align-items: center; justify-content: center; height: 45px; background: #029bc0cc; border-radius: 8px; box-shadow: 2px 2px 29px rgba(0,0,0,0.17); font-size: 21px; color: #fff; border: 1px solid #606060; cursor: pointer; flex-shrink: 0;}
+.pwrbox__form-but {margin: 0 0 14px;}
+.pwrbox__but-style:hover {box-shadow: 2px 2px 29px rgba(0,0,0,0.25);}
+.pwrbox__politica {font-size: 11px;color: #1a1a1a;line-height: 1.4em;display: flex;align-items: flex-start;gap: 8px;}
+.pwrbox__sucs {-webkit-appearance: none;-moz-appearance: none;width: 18px;height: 18px;border: 1px solid #8e8e8e;border-radius: 5px;position:relative;cursor: pointer;flex-shrink: 0;}
+.pwrbox__sucs:after {content: '';position: absolute;display: block;width: calc(100% - 4px);height: calc(100% - 4px);border-radius: 3px;background: #4dabc8;opacity: 0;left: 2px;top: 2px;}
+.pwrbox__sucs:checked:after {opacity: 1;}
+.pwrbox__politica-href {color: #646464;}
+
+@media (min-width: 600px) and (max-width: 1420px) {
+.pwrbox__but {right: 20px;}
+}
+@media screen and (max-width: 600px) {
+.pwrbox__but {width: 50px; height: 50px;  right: unset; top: unset; bottom: 70px; left: calc(50% - 25px); padding: 15px;}
+}
+@media screen and (max-width: 340px) {
+.pwrbox__form {padding: 0 27px;width: 100%;}
+}
+

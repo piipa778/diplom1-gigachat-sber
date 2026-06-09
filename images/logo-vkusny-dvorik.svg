@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="420" height="120" viewBox="0 0 420 120">
+<rect width="420" height="120" rx="24" fill="#3a3a3a"/>
+<text x="210" y="48" text-anchor="middle" font-family="Georgia, serif" font-size="36" fill="#f5d8a8">Вкусный</text>
+<text x="210" y="88" text-anchor="middle" font-family="Georgia, serif" font-size="40" fill="#ffffff">дворик</text>
+<path d="M55 60c18-30 42-30 60 0" fill="none" stroke="#b78a57" stroke-width="4" stroke-linecap="round"/>
+<path d="M305 60c18-30 42-30 60 0" fill="none" stroke="#b78a57" stroke-width="4" stroke-linecap="round"/>
+</svg>
